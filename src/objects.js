@@ -1,5 +1,5 @@
 // Declaring an empty object
-let empty = {};
+/*let empty = {};
 
 // Initializing object with default value
 const person = {
@@ -14,7 +14,7 @@ console.log("I am born in", person.yearOfBirth);
 // Looping an object
 for(let key in person){
     console.log("key is", key, "and value is", person[key]);
-}
+}*/
 
 /*Class discussion
 Break out into groups and discussion what are the following:
@@ -32,3 +32,13 @@ Exercise:
     d. coursesOffered - Array containing 3 Strings
 2. Print in the console the following sentence using the "school object" - "Welcome to <name> and we offer <coursesOffered>
 */
+
+
+//Solution for Exercise.
+const school = {
+    Name:"NTU",
+    yearEstablished: 1965,
+    isActive: true,
+    coursesOffered: [ 'IT Courses' , 'Business Courses', 'Law Courses']
+}
+console.log("Welcome to "+school.Name+" and we offer "+ school.coursesOffered+".");

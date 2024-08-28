@@ -7,9 +7,24 @@
     
 */
 
-const env = "DEV"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
+const env = "Blah"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
 let databaseCredential = "devuser:password";
 
 // Task: Add code here
 
-console.log(`Database credential for environment ${env} is ${databaseCredential}`);
+switch (env) {
+  case "DEV":
+    break;
+  case "STAGE":
+    databaseCredential = "stageuser:password";
+    break;
+    case "PROD":
+    databaseCredential = "produser:password";
+    break;
+    default:
+        databaseCredential = "You Shall not Pass!!! You got the wrong env. ";
+
+}
+console.log(
+  `Database credential for environment ${env} is ${databaseCredential}`
+);

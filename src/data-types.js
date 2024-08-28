@@ -21,7 +21,7 @@ const arr = [];
 console.log("arr",typeof arr);
 
 //control structures:
-let number = 10;
+let number = 234975832453;
 if (number % 2 ==0) {
   console.log(number + " is even");
 } else {
